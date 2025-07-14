@@ -1,0 +1,17 @@
+-- CREATE TABLE Shipping (
+--     shipping_id INT AUTO_INCREMENT PRIMARY KEY,
+--     order_id INT NOT NULL,
+--     customer_name VARCHAR(100),
+--     shipping_address VARCHAR(255),
+--     shipping_date DATE,
+--     delivery_date DATE,
+--     shipping_status VARCHAR(50),
+--     shipping_cost DECIMAL(10, 2)
+-- );
+-- INSERT INTO Shipping (order_id, customer_name, shipping_address, shipping_date, delivery_date, shipping_status, shipping_cost)
+-- VALUES
+-- (101, 'John Doe', '123 Main St, New York, NY', '2025-07-10', '2025-07-13', 'Delivered', 150.00),
+-- (102, 'Jane Smith', '456 Park Ave, Los Angeles, CA', '2025-07-12', '2025-07-16', 'In Transit', 200.50),
+-- (103, 'Ravi Kumar', '789 MG Road, Bangalore, IN', '2025-07-13', NULL, 'Pending', 120.75);
+-- SELECT * FROM Shipping;
+SELECT * FROM Shipping WHERE shipping_status = 'Delivered';
